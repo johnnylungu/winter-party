@@ -1,0 +1,196 @@
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-y: scroll;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 1000;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  display: inline-block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.brand {
+  border: 1px solid white;
+  width: 78px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 20px;
+  padding: 6px;
+}
+
+.brand:hover {
+  background-color: #456;
+}
+
+.navbar > ul > li {
+  border: 1px solid white;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.navbar > ul > li:hover {
+  background-color: #456;
+}
+
+.section {
+  height: 100vh;
+  width: auto;
+  text-align: right;
+  color: white;
+  padding: 5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.section > * {
+  position: relative;
+  z-index: 900;
+}
+
+.section#presentation h1 {
+  font-size: 3vh;
+}
+
+.section#presentation img {
+  width: 30%;
+}
+
+.opinion-1 {
+  background-color: slategrey;
+  border: 1px solid white;
+  width: 30vh;
+  height: 30vh;
+  padding: 3vh;
+  margin: 10vh;
+  margin-right: 50vh;
+  margin-left: 10vh;
+  margin-top: 2vh;
+  display: inline-block;
+  padding-top: 5vh;
+}
+
+.opinion-1 a {
+  color: white;
+  font-size: 2vh;
+}
+
+.opinion-1 img {
+  width: 10vh;
+  margin-top: -34vh;
+  position: absolute;
+  margin-left: -23vh;
+}
+
+.opinion-1 p {
+  text-align: justify;
+  font-size: 2.3vh;
+}
+
+.opinion-2 {
+  background-color: slategrey;
+  border: 1px solid white;
+  width: 30vh;
+  height: 30vh;
+  padding: 3vh;
+  margin: 10vh;
+  margin-right: 50vh;
+  margin-left: 10vh;
+  margin-top: 2vh;
+  display: inline-block;
+  padding-top: 5vh;
+}
+
+.opinion-2 a {
+  color: white;
+  font-size: 2.3vh;
+}
+
+.opinion-2 img {
+  width: 10vh;
+  margin-top: -34vh;
+  position: absolute;
+  margin-left: -23vh;
+}
+
+.opinion-2 p {
+  text-align: justify;
+  font-size: 2.3vh;
+}
+
+#reviews {
+  display: inline-block;
+}
+
+.form-1 {
+  display: table;
+  display: inline-block;
+  margin-top: 5vh;
+}
+
+.form-2 {
+  display: table-row;
+  display: inline-block;
+}
+
+.form-3 {
+  display: table;
+  display: inline-block;
+}
+
+.form-4 {
+  display: table-row;
+  display: inline-block;
+}
+
+label, input {
+  display: table-cell;
+  margin-bottom: 10px;
+  margin-right: 2vh;
+  padding: 1.5vh;
+  border-radius: 1vh;
+}
+
+label {
+  padding-right: 10px;
+  margin-right: 3vh;
+}
+
+form, label {
+  display: inline-block;
+}
+
+.Things > ul > li {
+  border: 3px solid white;
+  width: 30vh;
+  height: 5vh;
+  display: inline-block;
+  margin-right: 1vh;
+  margin-top: 1vh;
+  text-align: center;
+  font-size: 2.5vh;
+  border-radius: 1vh;
+}
+/*# sourceMappingURL=section.css.map */

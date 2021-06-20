@@ -1,0 +1,114 @@
+$flakeLayerColor:#234;
+$flakecolor: #457;
+$flakesize: 10px;
+$fallduration: 20s;
+
+body {overflow: hidden;
+    background-color: $flakeLayerColor;
+}
+
+.flake-layer{
+    
+    //position: fixed;
+    //top: 0;
+   // right: 0;
+    //bottom: 0;
+    //left: 0;
+    width: 100%;
+    height: 100vh;
+
+    .flake {
+        
+        background-color: $flakecolor;
+        border-radius: $flakesize;
+        position: fixed;
+        top: -$flakesize * 3;
+        
+        left: 1% * random(100);
+        animation: fall $fallduration linear infinite;
+
+
+        @keyframes fall {
+            from {top: -$flakesize 
+                
+                * 5;}
+            to {top: 100%;}
+        }
+
+
+
+        //big screen
+        
+        $count: 100;
+        
+        @media (min-width:1001px){
+            $count: 100;
+   
+           
+
+       
+            
+        
+
+
+
+
+        @for $n from 1 through  $count {
+        &:nth-child(#{$n}) {
+            left: 1% * random(100);
+
+            animation-delay: $fallduration * random();
+            $sizek: 0.5 + random();
+            animation-duration: $fallduration * 1 / $sizek;
+
+        
+
+            width: $flakesize * $sizek;
+           
+        height: $flakesize *  $sizek;
+        background-color: lighten($flakecolor, $sizek * 45%);
+        }
+        }
+    }
+
+
+
+
+
+           //small screen
+        
+           
+
+           @media (max-width:1000px){
+            $count: 10;
+   
+           
+               
+           
+   
+   
+   
+   
+           @for $n from 1 through  $count {
+           &:nth-child(#{$n}) {
+               left: 1% * random(100);
+   
+               animation-delay: $fallduration * random();
+               $sizek: 0.5 + random();
+               animation-duration: $fallduration * 1 / $sizek;
+   
+           
+   
+               width: $flakesize * $sizek;
+              
+           height: $flakesize *  $sizek;
+           background-color: lighten($flakecolor, $sizek * 45%);
+           }
+           }
+        }
+
+    }
+}
+   
+
+
